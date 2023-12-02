@@ -1,0 +1,81 @@
+._login_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  background: url('/Assets/login_bg.png');
+  background-position: center top;
+}
+
+._login_logo {
+  width: 25px;
+}
+
+._login_box {
+  width: 300px;
+  border: 2px #222 solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+._login_box_header {
+  padding: 14px 12px;
+  background-color: #f5f5f5;
+  color: #222;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+._login_box_main {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 12px;
+}
+
+._login_box_button {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #222;
+
+  padding: 8px 32px;
+  border: 2px solid black;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: box-shadow 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+._login_box_button:hover {
+  box-shadow: -8px 4px 20px #9BE7D8;
+}
+
+._login_box_button img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1em;
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+._login_box_footer {
+  font-size: 14px;
+  color: #222;
+  padding: 0.5em 0;
+  margin: 1em 0 0;
+}
