@@ -10,7 +10,11 @@
   <% if(!repl_user) { %>
     <%- include('Pages/Login') %>
   <% } else { %>
-    <%- include('Pages/Dashboard') %>
+    <% if(params.page == 'editor') {%>
+      <%- include('Pages/Editor') %>
+    <% } else { %>
+      <%- include('Pages/Dashboard') %>
+    <% }%>
   <% } %>
   <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
 </body>

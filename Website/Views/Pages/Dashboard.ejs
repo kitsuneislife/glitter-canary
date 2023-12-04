@@ -1,5 +1,38 @@
 <div class="_dashboard_container">
-  <div class="_dashboard_header">
+  <%-include('../Models/dashboard-header.ejs')%>
+  <div class="_dashboard_main">
+    <!--div class="_dashboard_main_separator"
+      style="padding-bottom: 48px; border-bottom: 1px solid #222;">
+      <span class="_dmh_title"> Gerencie seus selfos </span>
+    </div-->
+    <div class="_dashboard_main_separator">
+      <div class="_dmsf_header">
+        <span class="_dmh_title"> Selfos </span>
+      </div>
+      <div class="_dmsf_main">
+        <div style="font-size: 0.875rem; font-weight: 600;
+          border-bottom: 1px solid #C3C3C3;">
+          <div style="display: flex; align-items: center;
+            gap: 8px; margin-bottom: 16px; padding: 0px 20px;">
+            <span style="margin-top: -3px;">Nome</span>
+            <div style="display: flex; flex-direction: column;">
+              <svg viewBox="0 0 64 64" aria-hidden="true" class="_chevron_pair"><path d="M20,8 L44,32 L20,56" transform="translate(32,32) rotate(-90) translate(-32,-32)" stroke="currentColor" stroke-width="10" fill="none"></path>
+              </svg><svg viewBox="0 0 64 64" aria-hidden="true" class="_chevron_pair"><path d="M20,8 L44,32 L20,56" transform="translate(32,32) rotate(90) translate(-32,-32)" stroke="currentColor" stroke-width="10" fill="none"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="_dmsf_item">
+          <div style="display: flex; flex-direction: column; padding: 8px 0;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <%-include('../Models/svg-globe.ejs')%>
+              <a class="_dmsf_item_link">
+                <span class=_dmsf_item_title> modelo </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <a href="/logout"> Logout </a>
 </div>

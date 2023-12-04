@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "Website/Views/Pages/Dashboard.ejs": [
+      {
+        "id": "cf025cf3-a39b-4637-8625-320b0bb623ed",
+        "line": 7,
+        "version": 1704,
+        "index": 240
+      }
+    ]
+  }
 }

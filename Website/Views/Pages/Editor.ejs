@@ -1,0 +1,72 @@
+<div class="_dashboard_container">
+  <%-include('../Models/dashboard-header.ejs')%>
+  <div class="_editor_main">
+    <div class="_em_separator">
+      <div class="_em_navigation">
+        <div style="display: flex; gap: 5px; align-items: center;
+          margin-bottom: 15px; padding: 0px 8px;">
+          <div class="_emn_title_icon"></div>
+          <span class="_emn_title"> kitsuneislife</span>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <div class="_emn_item">
+            <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f38f.svg" class="css-bjuv3u">
+            Configurações
+          </div>
+          <div class="_emn_item" style="grid-template-columns: 24px 1fr 32px;">
+            <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f5c3.svg" class="css-bjuv3u">
+            Tarefas
+            <svg stroke="currentColor" fill="#694DFF" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="_em_content">
+        <div class="_emc_header">
+          <div class="_emc_header_title">
+            Configurações
+          </div>
+        </div>
+        <div class="_emc_main">
+          <row style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+            <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/270f.svg" style="width: 1.40rem;"> 
+            <span style="font-size: 1.77rem; font-weight: 700;"> Editar detalhes </span>
+          </row>
+          <label for="projectname" style="color: rgb(130, 130, 130); text-transform: uppercase; font-size: 11px; display: flex; flex-direction: column; margin-bottom: 10px;">
+            Nome do projeto
+            <input id="projectname" type="text" value="kitsuneislife" maxlength="20" style="font-size: 2em; font-weight: bold; margin-top: 0.25em;">
+          </label>
+          <label for="projecttoken" style="color: rgb(130, 130, 130); text-transform: uppercase; font-size: 11px; display: flex; flex-direction: column;">
+            Token
+            <input id="projecttoken" type="text" value="" style="font-size: 2em; font-weight: bold; margin-top: 0.25em;">
+          </label>
+          <row style="display: flex; align-items: center; gap: 6px; margin-bottom: 20px;">
+            <div class="_emc_savebutton"> 
+              <img alt="" data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4be.svg" style="width: 1em">
+              Salvar
+            </div>
+            <div class="_emc_cancelbutton"> 
+              Cancelar
+            </div>
+          </row>
+          <p>← <code>TERMINAL</code>: Você deve checar se a conta está conectada no terminal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="_em_footer">
+      <div style="padding-left: 16px; padding-right: 16px; display: flex; gap: 30px;">
+        <div class="_em_footer_button">
+          <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f603.svg" class="_em_footer_icon">
+          STATUS
+        </div>
+        <div class="_em_footer_button">
+          <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="_em_footer_icon">
+          LOGS
+        </div>
+        <div class="_em_footer_button">
+          <img data-module="Icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4bb.svg" class="_em_footer_icon">
+          TERMINAL
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
